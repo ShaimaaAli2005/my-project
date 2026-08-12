@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Black Goose Bistro</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav>
+        <a href="#">Main</a>
+        <a href="#">Make an Order</a>
+        <a href="#">Contact Us</a>
+    </nav>
+
+    <h1>Black Goose Bistro | Pizza-on-Demand</h1>
+
+    <p>
+        Our 12" wood-fired pizza are available for delivery,
+        build your custom pizza and we'll deliver it within an hour.
+    </p>
+
+
+    <form>
+
+        <!-- Customer Information -->
+        <fieldset>
+
+            <legend>Your Information</legend>
+
+            <p>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+            </p>
+
+            <p>
+                <label for="address">Address :</label>
+                <input type="text" id="address" name="address">
+            </p>
+
+            <p>
+                <label for="telephone">Telephone Number :</label>
+                <input type="tel" id="telephone" name="telephone">
+            </p>
+
+            <p>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email">
+            </p>
+
+            <p>
+                <label for="instructions">
+                    Delivery Instruction :
+                </label>
+
+                <br>
+
+                <textarea
+                    id="instructions"
+                    name="instructions"
+                    rows="5"
+                    cols="40"
+                    maxlength="400"
+                    placeholder="No more than 400 character long"></textarea>
+            </p>
+
+        </fieldset>
+
+
+        <!-- Pizza Builder -->
+
+        <h2>Design Your Dream Pizza:</h2>
+
+        <fieldset>
+
+            <legend>Pizza specs</legend>
+
+            <fieldset>
+
+                <legend>Crust (Choose one):</legend>
+
+                <p>
+                    <input type="radio" name="crust" value="classic">
+                    Classic White
+                    <br>
+
+                    <input type="radio" name="crust" value="multigrain">
+                    Multigrain
+                    <br>
+
+                    <input type="radio" name="crust" value="stuffed">
+                    Choose-stuffed crust
+                    <br>
+
+                    <input type="radio" name="crust" value="gluten-free">
+                    Gluten-free
+                </p>
+
+            </fieldset>
+
+
+            <fieldset>
+
+                <legend>
+                    Toppings (Choose as many as you want):
+                </legend>
+
+                <p>
+                    <input type="checkbox" name="toppings">
+                    Red Sauce
+                    <br>
+
+                    <input type="checkbox" name="toppings">
+                    White Sauce
+                    <br>
+
+                    <input type="checkbox" name="toppings">
+                    Mozzarella Cheese
+                    <br>
+
+                    <input type="checkbox" name="toppings">
+                    Pepperoni
+                    <br>
+
+                    <input type="checkbox" name="toppings">
+                    Mushrooms
+                    <br>
+
+                    <input type="checkbox" name="toppings">
+                    Peppers
+                    <br>
+
+                    <input type="checkbox" name="toppings">
+                    Anchovies
+                </p>
+
+            </fieldset>
+
+
+            <fieldset>
+
+                <legend>Number</legend>
+
+                <p>
+                    How many pizzas:
+                    <input type="number" min="1">
+                </p>
+
+            </fieldset>
+
+        </fieldset>
+
+
+        <br>
+
+        <!-- Form Buttons -->
+
+        <button type="submit">
+            Bring me a pizza!
+        </button>
+
+        <button type="reset">
+            Reset
+        </button>
+
+    </form>
+
+</body>
+
+</html>

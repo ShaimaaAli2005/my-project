@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My personal portfolio page">
+    <title>Shaimaa | My Portfolio</title>
+    <link rel="icon" href="images/favicon.png">
+</head>
+
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <h2>Shaimaa</h2>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#courses">Courses</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+            <a href="#faq">FAQ</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <!-- Hero / About -->
+        <section id="about">
+            <h1>Hello, I'm Shaimaa</h1>
+            <p>
+                I am a Computer and Systems Engineering student who loves
+                <strong>programming</strong>, learning new technologies and
+                creating <em>creative web projects</em>.
+            </p>
+            <p>
+                My goal is to become a professional <mark>Full Stack Developer</mark>.
+            </p>
+            <img src="images/profile.jpg" alt="Shaimaa working on web development" width="300">
+        </section>
+
+        <hr>
+
+        <!-- Skills -->
+        <section id="skills">
+            <h2>My Skills</h2>
+
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <li>Git & GitHub</li>
+            </ul>
+
+            <h3>My Learning Journey</h3>
+            <ol>
+                <li>Learn HTML</li>
+                <li>Learn CSS</li>
+                <li>Learn JavaScript</li>
+                <li>Learn React.js</li>
+                <li>Become a Full Stack Developer</li>
+            </ol>
+
+            <p>
+                I believe that <strong>practice</strong> is the key to success,
+                and <em>continuous learning</em> makes me better every day.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- My Courses -->
+        <section id="courses">
+            <h2>My Courses</h2>
+
+            <table border="1">
+                <caption>Courses I Have Studied</caption>
+
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Duration</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>2 Weeks</td>
+                        <td rowspan="2">Completed</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>3 Weeks</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>6 Weeks</td>
+                        <td>In Progress</td>
+                    </tr>
+                    <tr>
+                        <td>React.js</td>
+                        <td>4 Weeks</td>
+                        <td>Planned</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="3">My goal is to complete the Full Stack track.</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- Gallery -->
+        <section id="gallery">
+            <h2>My Gallery</h2>
+
+            <figure>
+                <img src="images/project1.jpg" alt="Web development project" width="250">
+                <figcaption>My Web Project</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/project2.jpg" alt="Programming workspace" width="250">
+                <figcaption>My Programming Workspace</figcaption>
+            </figure>
+            <figure>
+                <img src="images/project3.jpg" alt="Coding project on laptop" width="250">
+                <figcaption>My Coding Journey</figcaption>
+            </figure>
+        </section>
+
+        <hr>
+
+        <!-- Contact Form -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form action="#" method="post">
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your name" required>
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="example@email.com" required>
+                <br><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone"
+                       placeholder="Enter your phone number">
+                <br><br>
+
+                <label for="birthdate">Date of Birth:</label>
+                <input type="date" id="birthdate" name="birthdate">
+                <br><br>
+
+                <label for="topic">Subject:</label>
+                <select id="topic" name="topic">
+                    <option value="">Choose a topic</option>
+                    <option value="work">Work</option>
+                    <option value="project">Project</option>
+                    <option value="training">Training</option>
+                </select>
+                <br><br>
+
+                <p>Preferred Contact Method:</p>
+
+                <input type="radio" id="contactEmail" name="contactMethod" value="email">
+                <label for="contactEmail">Email</label>
+
+                <input type="radio" id="contactPhone" name="contactMethod" value="phone">
+                <label for="contactPhone">Phone</label>
+
+                <br><br>
+
+                <label for="message">Message:</label>
+                <br>
+                <textarea id="message" name="message" rows="6" cols="40"
+                          placeholder="Write your message here"></textarea>
+                <br><br>
+
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the terms and conditions.</label>
+
+                <br><br>
+
+                <button type="submit">Send Message</button>
+                <button type="reset">Reset</button>
+
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- FAQ -->
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+
+            <details>
+                <summary>What do you study?</summary>
+                <p>I study Computer and Systems Engineering.</p>
+            </details>
+
+            <details>
+                <summary>What is your career goal?</summary>
+                <p>My goal is to become a professional Full Stack Developer.</p>
+            </details>
+
+            <details>
+                <summary>What technologies do you use?</summary>
+                <p>I work with HTML, CSS, JavaScript, React.js and GitHub.</p>
+            </details>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <address>
+            Email: <a href="mailto:shaimaa@example.com">shaimaa@example.com</a><br>
+            Egypt
+        </address>
+
+        <p>&copy; 2026 Shaimaa. All rights reserved.</p>
+
+        <p>
+            <a href="https://github.com/" target="_blank">GitHub</a>
+            &nbsp;|&nbsp;
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+            &nbsp;|&nbsp;
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+        </p>
+    </footer>
+
+</body>
+</html>
