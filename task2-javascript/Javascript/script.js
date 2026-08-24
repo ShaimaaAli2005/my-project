@@ -133,14 +133,6 @@ console.log(calculateTotal(100, 3));
 const square = num => num * num;
 console.log(square(5));
 
-// Array creation and manipulation
-let fruits = ["Apple", "Banana", "Orange"];
-console.log(fruits);
-console.log(fruits[0]);
-fruits.push("Mango");
-fruits.pop();
-console.log(fruits);
-
 // Student grade evaluation function
 function getStudentStatus(grade) {
     if (grade >= 90) return "Excellent";
@@ -149,41 +141,12 @@ function getStudentStatus(grade) {
     return "Failed";
 }
 
-// Student array initialization
-let students = [
-    { name: "Shaimaa", grade: 95 },
-    { name: "Ahmed", grade: 75 },
-    { name: "Sara", grade: 50 }
-];
-
-// Array iteration using forEach
-students.forEach(student => {
-    console.log(student.name, getStudentStatus(student.grade));
-});
-
-// Shopping cart array initialization
-let cart = [
-    { product: "Laptop", price: 25000, quantity: 1 },
-    { product: "Mouse", price: 500, quantity: 2 },
-    { product: "Keyboard", price: 1000, quantity: 1 }
-];
-
-// Total cart price reduction
-let cartTotal = cart.reduce((total, item) => total + item.price * item.quantity, 0);
-console.log("Cart Total:", cartTotal);
-
 // Discount calculation function
 function calculateDiscount(total) {
     if (total >= 20000) return total * 0.15;
     if (total >= 10000) return total * 0.10;
     return 0;
 }
-
-// Discount and final price computation
-let discount = calculateDiscount(cartTotal);
-let finalPrice = cartTotal - discount;
-console.log("Discount:", discount);
-console.log("Final Price:", finalPrice);
 
 // ATM balance state initialization
 let balance = 5000;
@@ -193,7 +156,7 @@ function withdraw(amount) {
     if (amount <= 0) return "Invalid amount";
     if (amount > balance) return "Not enough balance";
     balance -= amount;
-    return ` Withdrawal successful. Balance: ${balance}`;
+    return `Withdrawal successful. Balance: ${balance}`;
 }
 console.log(withdraw(1000));
 
@@ -204,28 +167,10 @@ function login(username, password) {
 }
 console.log(login("admin", "1234"));
 
-// Quiz questions array setup
-let questions = [
-    { question: "What is 2 + 2?", answer: 4 },
-    { question: "What is 5 * 2?", answer: 10 },
-    { question: "What is 10 - 3?", answer: 7 }
-];
-
-// Quiz score tracking logic
-let score = 0;
-questions.forEach(question => {
-    if (question.answer === question.answer) score++;
-});
-console.log("Quiz Score:", score);
-
 // Project initiation main function
 function startProject() {
     let message = "JavaScript practice started!";
     let resultElement = document.getElementById("resultText");
     if (resultElement) resultElement.textContent = message;
     console.log("Welcome to JavaScript Revision Project!");
-    console.log("Total Students:", students.length);
-    console.log("Cart Total:", cartTotal);
-    console.log("Final Price:", finalPrice);
-    console.log("Quiz Score:", score);
 }
