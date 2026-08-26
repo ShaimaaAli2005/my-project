@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Management System</title>
+
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/all.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Student<span>Hub</span></div>
+        <nav>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#students">Students</a>
+            <a href="#addStudent">Add Student</a>
+        </nav>
+    </header>
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div>
+                <p class="small-title">STUDENT MANAGEMENT</p>
+                <h1>
+                    Manage Your
+                    <span>Students</span>
+                    Easily
+                </h1>
+                <p class="hero-text">
+                    A simple student management system
+                    to organize students, grades and skills.
+                </p>
+                <a href="#students" class="hero-btn">
+                    View Students
+                </a>
+            </div>
+        </section>
+        <!-- DASHBOARD -->
+        <section class="dashboard" id="dashboard">
+            <div class="section-title">
+                <p>OVERVIEW</p>
+                <h2>Student Dashboard</h2>
+            </div>
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+                    <p>Total Students</p>
+                    <h3 id="totalStudents">0</h3>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-chart-column"></i></div>
+                    <p>Average Grade</p>
+                    <h3 id="averageGrade">0</h3>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-trophy"></i></div>
+                    <p>Highest Grade</p>
+                    <h3 id="highestGrade">0</h3>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <p>Graduated</p>
+                    <h3 id="graduatedStudents">0</h3>
+                </div>
+
+            </div>
+        </section>
+        <!-- STUDENTS -->
+        <section class="students-section" id="students">
+            <div class="section-heading">
+                <div>
+                    <p>OUR STUDENTS</p>
+                    <h2>Student List</h2>
+                </div>
+                <input type="text" id="searchInput" placeholder="Search student...">
+            </div>
+
+            <div class="students-container" id="studentsContainer"></div>
+        </section>
+       
+        <!-- ADD STUDENT -->
+        <section class="add-section" id="addStudent">
+
+            <div class="section-title">
+                <p>NEW STUDENT</p>
+                <h2>Add Student</h2>
+            </div>
+
+            <form id="studentForm">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" id="studentName" placeholder="Enter student name" >
+                </div>
+                <div class="form-group">
+                    <label>Age</label>
+                    <input type="number" id="studentAge" placeholder="Enter age">
+                </div>
+                <div class="form-group">
+                    <label>City</label>
+                    <input type="text" id="studentCity" placeholder="Enter city" >
+                </div>
+                <div class="form-group">
+                    <label>Grade</label>
+                    <input type="number" id="studentGrade" placeholder="Enter grade" min="0" max="100">
+                </div>
+                <div class="form-group">
+                    <label>Skills</label>
+                    <input type="text" id="studentSkills" placeholder="HTML, CSS, JS"  >
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="studentGraduated" >
+                    <label for="studentGraduated">
+                        Graduated
+                    </label>
+                </div>
+                <button type="submit">
+                    Add Student
+                </button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 StudentHub. All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="./Javascript/script.js"></script>
+
+</body>
+</html>
